@@ -1,4 +1,4 @@
-package br.com.nevesfood.dto;
+package br.com.ranevesfood.pedidos.dto;
 
 import lombok.*;
 

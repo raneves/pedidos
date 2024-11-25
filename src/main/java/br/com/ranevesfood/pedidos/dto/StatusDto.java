@@ -1,6 +1,6 @@
-package br.com.nevesfood.dto;
+package br.com.ranevesfood.pedidos.dto;
 
-import br.com.nevesfood.nodel.Status;
+import br.com.ranevesfood.pedidos.model.Status;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;

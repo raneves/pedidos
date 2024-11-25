@@ -1,16 +1,16 @@
-package br.com.nevesfood.service;
+package br.com.ranevesfood.pedidos.service;
 
-import br.com.nevesfood.dto.PedidoDto;
-import br.com.nevesfood.dto.StatusDto;
-import br.com.nevesfood.nodel.Pedido;
-import br.com.nevesfood.nodel.Status;
-import br.com.nevesfood.repository.PedidoRepository;
+import br.com.ranevesfood.pedidos.dto.PedidoDto;
+import br.com.ranevesfood.pedidos.dto.StatusDto;
+import br.com.ranevesfood.pedidos.model.Pedido;
+import br.com.ranevesfood.pedidos.model.Status;
+import br.com.ranevesfood.pedidos.repository.PedidoRepository;
 import lombok.RequiredArgsConstructor;
 import org.modelmapper.ModelMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import jakarta.persistence.EntityNotFoundException;
+import javax.persistence.EntityNotFoundException;
 import java.time.LocalDateTime;
 import java.util.List;
 import java.util.stream.Collectors;

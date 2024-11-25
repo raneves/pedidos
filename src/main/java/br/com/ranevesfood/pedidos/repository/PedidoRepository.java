@@ -1,12 +1,12 @@
-package br.com.nevesfood.repository;
+package br.com.ranevesfood.pedidos.repository;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.transaction.annotation.Transactional;
 
-import br.com.nevesfood.nodel.Pedido;
-import br.com.nevesfood.nodel.Status;
+import br.com.ranevesfood.pedidos.model.Pedido;
+import br.com.ranevesfood.pedidos.model.Status;
 
 public interface PedidoRepository extends JpaRepository<Pedido, Long> {
     @Transactional

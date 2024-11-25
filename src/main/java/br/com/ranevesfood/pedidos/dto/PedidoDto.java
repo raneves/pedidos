@@ -1,4 +1,4 @@
-package br.com.nevesfood.dto;
+package br.com.ranevesfood.pedidos.dto;
 
 import lombok.*;
 
@@ -6,7 +6,7 @@ import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
-import br.com.nevesfood.nodel.Status;
+import br.com.ranevesfood.pedidos.model.Status;
 
 @Getter
 @Setter

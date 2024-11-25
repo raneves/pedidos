@@ -1,4 +1,4 @@
-package br.com.nevesfood.config;
+package br.com.ranevesfood.pedidos.config;
 
 import org.modelmapper.ModelMapper;
 import org.springframework.context.annotation.Bean;

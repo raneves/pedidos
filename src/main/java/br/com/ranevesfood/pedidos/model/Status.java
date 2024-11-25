@@ -1,4 +1,4 @@
-package br.com.nevesfood.nodel;
+package br.com.ranevesfood.pedidos.model;
 
 public enum Status {
     REALIZADO,

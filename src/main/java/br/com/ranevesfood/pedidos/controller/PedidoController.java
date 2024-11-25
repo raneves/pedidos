@@ -1,16 +1,17 @@
-package br.com.nevesfood.controller;
+package br.com.ranevesfood.pedidos.controller;
 
-import br.com.nevesfood.dto.PedidoDto;
-import br.com.nevesfood.dto.StatusDto;
-import br.com.nevesfood.service.PedidoService;
+import br.com.ranevesfood.pedidos.dto.PedidoDto;
+import br.com.ranevesfood.pedidos.dto.StatusDto;
+import br.com.ranevesfood.pedidos.service.PedidoService;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.util.UriComponentsBuilder;
 
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotNull;
+import javax.validation.Valid;
+import javax.validation.constraints.NotNull;
 import java.net.URI;
 import java.util.List;
 
@@ -31,6 +32,11 @@ public class PedidoController {
             PedidoDto dto = service.obterPorId(id);
 
             return  ResponseEntity.ok(dto);
+        }
+
+        @GetMapping("/porta")
+        public String retornaPorta(@Value("${local.server.port}") String porta){
+            return String.format("Requisição respondida pela instância executando na porta %s", porta);
         }
 
         @PostMapping()
